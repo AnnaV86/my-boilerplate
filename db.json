@@ -1,0 +1,10 @@
+{
+	"users": [
+		{ "name": "Vasya", "age": 39, "id": "1fgkd" },
+		{ "name": "Masha", "age": 25, "id": "er2df" }
+	],
+	"cities": [
+		{ "city": "Moscow", "population": 12632409, "id": "adf21f" },
+		{ "city": "London", "population": 9002488, "id": "bdfd28" }
+	]
+}
