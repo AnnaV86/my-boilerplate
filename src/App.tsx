@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Main, NavBar, Page2 } from './components';
+import { Main } from './components/Main';
+import { NavBar } from './components/NavBar';
+import { Page2 } from './components/Page2';
 
 export const App = () => {
 	return (
