@@ -19,13 +19,25 @@ const config: Configuration = {
 				]
 			},
 			{
-				test: /\.css$/i,
-				use: ['style-loader', 'css-loader']
+				test: /\.(scss|css)$/,
+				use: [
+					'style-loader',
+					{
+						loader: 'css-loader',
+						options: {
+							sourceMap: true,
+							importLoaders: 1,
+							modules: true
+						}
+					},
+					{ loader: 'postcss-loader', options: { sourceMap: true } },
+					{ loader: 'sass-loader', options: { sourceMap: true } }
+				]
 			},
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: 'asset/resource'
+			}
 		]
 	},
 	output: {

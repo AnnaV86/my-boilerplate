@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCities } from '../../selectors/cities';
 import { getCitiesThunk } from '../../thunks';
 
-import style from './page2.module.css';
+import style from './page2.module.scss';
 
 export const Page2 = () => {
 	const dispatch = useDispatch();

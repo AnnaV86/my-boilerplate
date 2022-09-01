@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getUsers } from '../../selectors/users';
 import { getUsersThunk } from '../../thunks';
 
-import style from './main.module.css';
+import style from './main.module.scss';
 
 export const Main = () => {
 	const dispatch = useDispatch();
