@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "ES5",
-		"module": "commonjs",
+		"module": "ES2020",
 		"moduleResolution": "node",
 		"lib": ["DOM", "ESNext"],
 		"jsx": "react-jsx",
@@ -16,5 +16,11 @@
 		"typeRoots": ["./declarations"],
 		"allowJs": true
 	},
-	"include": ["src/**/*"]
+	"ts-node": {
+		"compilerOptions": {
+			"module": "commonjs"
+		},
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"],
 }

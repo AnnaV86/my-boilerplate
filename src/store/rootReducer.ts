@@ -1,6 +1,5 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import { citiesReducer } from './modules/cities';
-import { usersReducer } from './modules/users';
+import { citiesReducer, usersReducer } from './modules';
 
 export const rootReducer = combineReducers({
 	users: usersReducer,

@@ -1,7 +1,7 @@
-export const getResponse = response => {
+export const getResponse = (response: Response) => {
 	try {
 		if (!response.ok) {
-			throw new Error(response.status);
+			throw response.status;
 		}
 		return response.json();
 	} catch (err) {

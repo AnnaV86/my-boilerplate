@@ -1,10 +1,11 @@
+import { Dispatch } from 'redux';
 import { getUsersFetch } from '../api';
 import { getUsers } from '../store/modules/users';
 
-export const getUsersThunk = () => async dispatch => {
-	const response = await getUsersFetch();
-	console.log(response);
-	if (response) {
-		dispatch(getUsers(response));
+export const getUsersThunk = () => async (dispatch: Dispatch) => {
+	const users = await getUsersFetch();
+
+	if (users) {
+		dispatch(getUsers(users));
 	}
 };
