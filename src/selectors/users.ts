@@ -1,3 +1,3 @@
-import { IStore } from '../store';
+import { IStore } from '../store/models';
 
 export const getUsers = (store: IStore) => store.users;
